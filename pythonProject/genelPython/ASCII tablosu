@@ -1,0 +1,37 @@
+
+##ascıı tablosu
+
+
+
+print(ord("A"))
+print(ord("a"))
+print(ord("p"))
+print(ord("ş"))
+
+
+### girilen harfin büyük ya da küçük olduğunu söyleyen program
+
+harf = input("lütfen bir harf giiniz")[0]
+print(harf)
+
+if ord(harf)>= 65 and ord(harf)<= 90:
+    print("{} büyük harftir".format(harf))
+elif ord(harf)>= 97 and ord(harf)<= 122:
+    print("{} küçük harftir".format(harf))
+else:
+    print("harf gir dedik ulan")
+
+
+
+for i in range(65,91):
+    print(chr(i), end=" ")
+
+for i in range(97,123):
+    print(chr(i), end=" ")
+
+isim = "Berk Batuhan Devran"
+for harf in isim:
+    if harf != " ":
+        print(ord(harf), end="     ")
+
+
